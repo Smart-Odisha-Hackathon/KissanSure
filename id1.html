@@ -8,11 +8,26 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 
         <!--=============== CSS ===============-->
+        <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <!-- FontAwesome 4.7.0 CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
         <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="assets/css/ID1.css">
 
-        <title>Website</title>
+        <title>KissanSure Tracker</title>
     </head>
-    <body>
+    <body class="ido-body">
         <!--=============== HEADER ===============-->
         <header class="header" id="header">
             <nav class="nav container">
@@ -49,7 +64,48 @@
                
             </nav>
         </header>
+        <!-- =================TRACKING iD=================== -->
 
+        <div class="container py-5 mx-auto">
+            <div class="card">
+              <div class=" px-5 pt-4 pb-2 row d-flex justify-content-between top">
+                <div class="d-flex">
+                  <p>
+                    Application Number:
+                    <span class="font-weight-bold">67890</span>
+                  </p>
+                </div>
+                <div class="d-flex flex-column text-sm-right">
+                  <p>
+                    Tracking ID :<span class="font-weight-bold">23797684671634</span>
+                  </p>
+                </div>
+              </div>
+              <!-- Add class "active" to progress -->
+              <div class="justify-content-center mx-auto my-3">
+                <div>
+                  <ul id="ido-progressbar" class="text-center ">
+                    <li class="active step0 status"><br/><b>Application submitted</b> <br /> <br />1-10-2022</li>
+                    <li class="active step0 status"><br /><b>Verification officer designated</b> <br>4-10-2022</li>
+                    <li class="active step0 status"><br /><b>Field Verification</b><br /><br>5-10-2022</li>
+                    <li class="step0 status"><br /><b>Claim Decision<br/> <span class="not-settled"> NOT SETTLED</span> </b><br/>7-10-2022</li>
+                    <li class="step0 status"><br /><b>Insurance Company Verification</b><br><span class="not-settled"> CANCELLED</span></li>
+                    <li class="step0 status"><br /><b>Final Disembursement</b><br /><br><span class="not-settled"> CANCELLED</span></li>
+                    
+                  </ul>
+                </div>
+              </div>
+
+              <div class="container mx-auto justify-content-center message">
+                <!-- CONGRATULATIONS! <br/> -->
+                  We regret to inform that claim could not settled upon field verification and thus we will not be able to move forward with the process.
+              </div>
+              
+              
+
+
+            </div>
+          </div>
        
         <!--=============== FOOTER ===============-->
         <footer class="footer section">
@@ -106,6 +162,3 @@
         <script src="assets/js/main.js"></script>
     </body>
 </html>
-
-
-
