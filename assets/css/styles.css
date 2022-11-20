@@ -83,6 +83,9 @@ ul {
 a {
   text-decoration: none;
 }
+a:hover{
+  text-decoration: none;
+}
 
 img {
   max-width: 100%;
@@ -401,7 +404,7 @@ body.dark-theme {
 
 /*=============== FOOTER ===============*/
 .footer {
-  background-color: var(--first-color-lighten);
+  background-color: #C9EAF6;
   padding-bottom: 2rem;
 }
 
@@ -422,11 +425,13 @@ body.dark-theme {
 
 .footer__description, .footer__link {
   font-size: var(--small-font-size);
+  
 }
 
 .footer__links {
   display: grid;
   row-gap: .5rem;
+  
 }
 
 .footer__link {
