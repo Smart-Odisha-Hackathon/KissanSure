@@ -4,14 +4,14 @@
   color: #000;
   overflow-x: hidden;
   height: 100vh;
-  background-color: #8c0;
+  background-color: #ffffff;
   background-repeat: no-repeat;
   font-family: "Poppins", sans-serif;
 }
 
 .card {
   z-index: 0;
-  background-color: #eceff1;
+  background-color: #ddf7f7;
   padding-bottom: 20px;
   margin-top: 90px;
   margin-bottom: 90px;
@@ -98,7 +98,7 @@
 
 #ido-progressbar li.active::before,
 #ido-progressbar li.active::after {
-  background-color: green;
+  background-color: rgb(102, 192, 102);
 }
 
 #ido-progressbar li.active::before {
