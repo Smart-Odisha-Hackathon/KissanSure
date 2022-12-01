@@ -23,12 +23,35 @@
 
         <link rel="stylesheet" href="assets/css/styles.css">
 
-
         <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
         <link rel="manifest" href="assets/img/site.webmanifest">
-        <title>KissanSure</title>
+        <title>କୃଷକ ନିଶ୍ଚିତ</title>
+        <!-- <style type="text/css">
+            #landing {
+                width: 100%;
+                height: 100vh;
+                display: grid;
+                place-items: center;
+                background-image: url("assets/img/fasalbima.jpg");
+                background-size: 100% 100%;
+                background-attachment: fixed;
+                animation: landing 8s linear ;
+              }
+              @keyframes landing {
+                0%{
+                    background-image: url('assets/img/fasalbima.jpg');
+                }
+                40%{
+                    background-image: url('assets/img/paramparagat.jpg');
+                }
+                80%{
+                    background-image: url('assets/img/sinchayee.jpg');
+                }
+              }
+              
+        </style> -->
 
         <style>
             .bg-img-1 {
@@ -56,15 +79,12 @@
             #pagetwo{
                 height: 100vh;
             }
-            
         </style>
     </head>
     <body onload="myfunc()">
-        
         <div id="preloader">
-        </div>
 
-        <!-- topbar -->
+        </div>
 
         <div class="container-fluid py-2 border-bottom d-none d-lg-block topbar1">
             <div class="container">
@@ -73,9 +93,8 @@
                         <div class="d-inline-flex align-items-center">
                             <a class="text-decoration-none text-body pe-3" href=""><i class="bi bi-telephone me-2"></i>+012
                                 345 6789</a>
-                            
-                            <a style=" border-radius: 10px; padding-right: 1px; padding-left: 1px; background-color: rgb(227, 28, 28)" class="text-decoration-none text-body px-3" href="https://drive.google.com/drive/folders/1YoCcFEAqqnoTIl2jHNRQ39viIugsCKr6?usp=sharing"><i
-                                    class="bi bi-envelope me-2"></i>Help</a>
+                                <a style=" border-radius: 10px; padding-right: 1px; padding-left: 1px; background-color: rgb(227, 28, 28)" class="text-decoration-none text-body px-3" href="https://drive.google.com/drive/folders/1YoCcFEAqqnoTIl2jHNRQ39viIugsCKr6?usp=sharing"><i
+                                    class="bi bi-envelope me-2"></i>ସାହାଯ୍ୟ </a>
                             
     
                         </div>
@@ -95,23 +114,23 @@
         
         
         <!--=============== HEADER ===============-->
-        
         <header class="header" id="header">
-            
             <nav class="nav container">
-                <a href="index.html" class="nav__logo hover-color"><h1>KisanSure</h1></a>
+                <a href="indexodia.html" class="nav__logo hover-color"><h1>କୃଷକ ନିଶ୍ଚିତ</h1></a>
 
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
-
+                        <!-- <li class="nav__item">
+                            <a href="#home" class="nav__link">Home</a>
+                        </li> -->
                         <li class="nav__item">
-                            <a href="#" class="nav__link">Track Claim</a>
+                            <a href="#pagetwo" class="nav__link">ଦାବି ଟ୍ରାକ୍ କରନ୍ତୁ</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#checkpremium" class="nav__link">Check Premium</a>
+                            <a href="#checkpremium" class="nav__link">ପ୍ରିମିୟମ୍ ଯାଞ୍ଚ</a>
                         </li>
                         <li class="nav__item">
-                            <a href="predict.html" class="nav__link">Predict settlement</a>
+                            <a href="predictodia.html" class="nav__link">ପୂର୍ବାନୁମାନ ସମାଧାନ</a>
                         </li>
                         <i class='bx bx-toggle-left change-theme' id="theme-button"></i>
                     </ul>
@@ -121,22 +140,26 @@
                     <i class='bx bx-grid-alt'></i>
                 </div>
 
-                
-
                 <div class="dropdown11">Login
                     <ul class="dropdown11-menu">
-                      <li><a href="login.html">Govt.</a></li>
-                      <li><a href="logvol.html">Volunteer</a></li>
+                      <li><a href="loginodia.html">Govt.</a></li>
+                      <li><a href="logvolodia.html">Volunteer</a></li>
                                               </ul>
                   </div>
-                  
             </nav>
         </header>
 
 
+        
+        <!-- preloader -->
+        
+
+        
+        <!-- <main class="main">-->
             <!--=============== HOME ===============-->
 
            
+            <!-- <section id="landing" > -->
                 <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                       <div class="carousel-item carousel-image bg-img-1 active">
@@ -150,12 +173,13 @@
                       </div>
                     </div>
                   </div>
+            <!-- </section> -->
 
 
             
 
 
-            <section class="home section" id="home">
+            <section class="home section" id="home pagetwo">
                 <div class="home__container container grid">
                     
                      <svg class="svg__img svg__color home__img" viewBox="0 0 755.41 574.73" xmlns="http://www.w3.org/2000/svg">
@@ -457,8 +481,8 @@
                     </svg>
 
                     <div class="home__data">
-                        <h1 class="home__title">Insurance Claims <br> Clearer Easier</h1>
-                        <p class="home__description">Track the insurance settlement claimed by you under Pradhan Mantri Phasal Bima Yojana.<br> For demonstration purposes choose from the below application number 12345 or 67890 to check out the application.
+                        <h1 class="home__title">ବୀମା ଦାବି <br> ସ୍ୱଚ୍ଛ ସହଜ</h1>
+                        <p class="home__description">ପ୍ରଧାନ ମନ୍ତ୍ରୀ ଫସଲ ବିମା ଯୋଜନା ଅଧୀନରେ ତୁମ ଦ୍ୱାରା ଦାବି କରାଯାଇଥିବା ବୀମା ସମାଧାନକୁ ଟ୍ରାକ୍ କରନ୍ତୁ | ପ୍ରଦର୍ଶନ ଉଦ୍ଦେଶ୍ୟ ପାଇଁ ନିମ୍ନ ଆବେଦନ ନମ୍ବର 12345 କିମ୍ବା 67890 ରୁ ଚୟନ କରନ୍ତୁ
                         <!-- <br> -->
                         
                           
@@ -474,17 +498,12 @@
                             </ul>
                         </div> -->
 
-                        <!-- <div class="dropdown11">Application Number
-                            <ul class="dropdown11-menu">
-                              <li><a href="id0.html">12345</a></li>
-                              <li><a href="id1.html">67890</a></li>
-                                                      </ul>
-                          </div> -->
-
-                          <form action="index.html" method="POST">
-                            <input  style="padding: 2px; background: #c9eaf6; border-radius: 20px; text-align: center;" type="text" name="" id="appnoid" placeholder="Application Number" />
+                        
+                          <form action="indexodia.html" method="POST">
+                            <input  style="padding: 2px; background: #c9eaf6; border-radius: 20px; text-align: center;" type="text" name="" id="appnoid" placeholder="ଆବେଦନ ସଂଖ୍ୟା" />
                             <input style="padding: 4px; background: #c9eaf6; border-radius: 20px; text-align: center;" type="submit" name="" value="Search" onclick="validateid()" />
                           </form>
+
 
                     </div>   
                 </div>
@@ -492,20 +511,16 @@
 
 
 
+
             <section class="app section container"  id="checkpremium" style="height: 100vh;">
                 <div class="app__container grid">
                     <div class="app__data">
-                        <h2 class="section__title-center">Check Premium <br></h2>
-                        <p class="app__description">You can check the status of your insurance files, due date of premium payment and pay your premium.</p>
-                            <!-- <div class="dropdown11">Application Number
-                                <ul class="dropdown11-menu">
-                                  <li><a href="preid0.html">12345</a></li>
-                                  <li><a href="preid1.html">67890</a></li>
-                                </ul>
-                              </div> -->
+                        <h2 class="section__title-center">ପ୍ରିମିୟମ୍ ଯାଞ୍ଚ କରନ୍ତୁ <br></h2>
+                        <p class="app__description">ତୁମେ ତୁମର ବୀମା ଫାଇଲଗୁଡିକର ସ୍ଥିତି, ପ୍ରିମିୟମ ଦେବାର ଧାର୍ଯ୍ୟ ତାରିଖ ଯାଞ୍ଚ କରି ତୁମର ପ୍ରିମିୟମ ଦେୟ କରିପାରିବ.</p>
+                            
 
-                              <form action="index.html" method="POST">
-                                <input  style="padding: 2px; background: #c9eaf6; border-radius: 20px; text-align: center;" type="text" name="" id="appnopreid" placeholder="Application Number" />
+                              <form action="indexodia.html" method="POST">
+                                <input  style="padding: 2px; background: #c9eaf6; border-radius: 20px; text-align: center;" type="text" name="" id="appnopreid" placeholder="ଆବେଦନ ସଂଖ୍ୟା" />
                                 <input style="padding: 4px; background: #c9eaf6; border-radius: 20px; text-align: center;" type="submit" name="" value="Search" onclick="validatepreid()" />
                               </form>
                     </div>
@@ -724,139 +739,146 @@
     </main>
 
     <main>
-        <h3 class="faq-heading">Frequently Asked Question</h3>
+        <h3 class="faq-heading">ବାରମ୍ବାର ପଚରାଯାଇଥିବା ପ୍ରଶ୍ନ</h3>
         <section class="faq-container">
-            <div class="faq-one">
-                <!-- faq question -->
-                <h6 class="faq-page">How can i track my application status?</h6>
-                <!-- faq answer -->
-                <div class="faq-body">
-                    <p>Application can be tracked using the unique application number that was given during the
-                        application in PMFBY portal</p>
-                </div>
+          <div class="faq-one">
+            <!-- faq question -->
+            <h6 class="faq-page">ମୁଁ କିପରି ମୋର ଆବେଦନ ସ୍ଥିତିକୁ ଟ୍ରାକ୍ କରିପାରିବି?</h6>
+            <!-- faq answer -->
+            <div class="faq-body">
+              <p>
+                PMFBY ପୋର୍ଟାଲରେ ଆବେଦନ ସମୟରେ ଦିଆଯାଇଥିବା ଅନନ୍ୟ ଆବେଦନ ନମ୍ବର ବ୍ୟବହାର କରି
+                ଆବେଦନ କରାଯାଇପାରିବ |
+              </p>
             </div>
-            <hr class="hr-line">
-            <div class="faq-two">
-                <!-- faq question -->
-                <h6 class="faq-page">How can i check my premium is it is paid or not?</h6>
-                <!-- faq answer -->
-                <div class="faq-body">
-                    <p>By entering the application number recieved during application, user can track the premium
-                        status. He/She can pay it as well through the payment option available below to non-payers</p>
-                </div>
+          </div>
+          <hr class="hr-line" />
+          <div class="faq-two">
+            <!-- faq question -->
+            <h6 class="faq-page">
+              ମୁଁ କିପରି ମୋର ପ୍ରିମିୟମ ଯାଞ୍ଚ କରିପାରିବି ଏହା ଦେୟ ହୋଇଛି କି ନାହିଁ?
+            </h6>
+            <!-- faq answer -->
+            <div class="faq-body">
+              <p>
+                ଆବେଦନ ସମୟରେ ପ୍ରାପ୍ତ ହୋଇଥିବା ଆବେଦନ ନମ୍ବର ପ୍ରବେଶ କରି, ଉପଭୋକ୍ତା ପ୍ରିମିୟମ୍
+                ସ୍ଥିତିକୁ ଟ୍ରାକ୍ କରିପାରିବେ | ଅଣ-ଦେୟକାରୀଙ୍କୁ ନିମ୍ନରେ ଉପଲବ୍ଧ ପେମେଣ୍ଟ
+                ଅପ୍ସନ୍ ମାଧ୍ୟମରେ ସେ ଏହାକୁ ମଧ୍ୟ ଦେଇପାରିବେ |
+              </p>
             </div>
-            <hr class="hr-line">
-            <div class="faq-three">
-                <!-- faq question -->
-                <h6 class="faq-page">Can I pay my premium using this website?</h6>
-                <!-- faq answer -->
-                <div class="faq-body">
-                    <p>Yes, You can pay the premium through the portal .</p>
-                </div>
+          </div>
+          <hr class="hr-line" />
+          <div class="faq-three">
+            <!-- faq question -->
+            <h6 class="faq-page">
+              ମୁଁ ଏହି ୱେବସାଇଟ୍ ବ୍ୟବହାର କରି ମୋର ପ୍ରିମିୟମ୍ ଦେଇ ପାରିବି କି?
+            </h6>
+            <!-- faq answer -->
+            <div class="faq-body">
+              <p>ହଁ, ଆପଣ ପୋର୍ଟାଲ୍ ମାଧ୍ୟମରେ ପ୍ରିମିୟମ୍ ଦେଇପାରିବେ |</p>
             </div>
-
-            <hr class="hr-line">
-            <div class="faq-four">
-                <!-- faq question -->
-                <h6 class="faq-page">Is this of any use to the government?</h6>
-                <!-- faq answer -->
-                <div class="faq-body">
-                    <p>Government can check the statistics of maximum claim rejection areas and other factors affecting
-                        the claim, so that they can better improve the policies. Also, the fraud detection through the
-                        volunteer verification, the governmnet can discard frauds, thus preventing losses. .</p>
-                </div>
+          </div>
+          <hr class="hr-line" />
+          <div class="faq-four">
+            <!-- faq question -->
+            <h6 class="faq-page">ଏହା ସରକାରଙ୍କ ପାଇଁ କିଛି ଉପଯୋଗୀ କି?</h6>
+            <!-- faq answer -->
+            <div class="faq-body">
+              <p>
+                ସରକାର ସର୍ବାଧିକ ଦାବି ପ୍ରତ୍ୟାଖ୍ୟାନ କ୍ଷେତ୍ର ଏବଂ ଦାବିକୁ ପ୍ରଭାବିତ କରୁଥିବା
+                ଅନ୍ୟାନ୍ୟ କାରଣଗୁଡିକର ପରିସଂଖ୍ୟାନ ଯାଞ୍ଚ କରିପାରିବେ, ଯାହା ଦ୍ବାରା ସେମାନେ
+                ନୀତିକୁ ଉନ୍ନତ କରିପାରିବେ। ସ୍ଵେଛାସେବୀ ଯାଞ୍ଚ ମାଧ୍ୟମରେ ଜାଲିଆତି ଚିହ୍ନଟ,
+                ଗଭର୍ଣ୍ଣେଟ୍ ଜାଲିଆତିକୁ ତ୍ୟାଗ କରିପାରିବ, ଯାହାଦ୍ୱାରା କ୍ଷତି ରୋକାଯାଇପାରିବ |
+              </p>
             </div>
-
-            <hr class="hr-line">
-            <div class="faq-five">
-                <!-- faq question -->
-                <h6 class="faq-page">Can i know how much insurance I can expect?</h6>
-                <!-- faq answer -->
-                <div class="faq-body">
-                    <p>Yes, by entering respective data in the prediction form in the predict settlemnt page, farmer can
-                        predict the claim percentage. Also, the claim process can be made faster through this. .</p>
-                </div>
+          </div>
+          <hr class="hr-line" />
+          <div class="faq-five">
+            <!-- faq question -->
+            <h6 class="faq-page">ମୁଁ ଜାଣିପାରେ କି ମୁଁ କେତେ ବୀମା ଆଶା କରିପାରିବି?</h6>
+            <!-- faq answer -->
+            <div class="faq-body">
+              <p>
+                ହଁ, ପୂର୍ବାନୁମାନ ସମାଧାନ ପୃଷ୍ଠାରେ ପୂର୍ବାନୁମାନରେ ସମ୍ପୃକ୍ତ ତଥ୍ୟ ପ୍ରବେଶ
+                କରି, କୃଷକ ଦାବି ପ୍ରତିଶତ ପୂର୍ବାନୁମାନ କରିପାରିବେ | ଏଥିସହ, ଦାବି ପ୍ରକ୍ରିୟା
+                ଏହା ମାଧ୍ୟମରେ ଶୀଘ୍ର କରାଯାଇପାରିବ |
+              </p>
             </div>
-
-            <hr class="hr-line">
-            <div class="faq-six">
-                <!-- faq question -->
-                <h6 class="faq-page">Can I pay my premium using this website?</h6>
-                <!-- faq answer -->
-                <div class="faq-body">
-                    <p>Yes, You can pay the premium through the portal .</p>
-                </div>
+          </div>
+          <hr class="hr-line" />
+          <div class="faq-six">
+            <!-- faq question -->
+            <h6 class="faq-page">କୃଷକମାନେ ପରିସଂଖ୍ୟାନ ତଥ୍ୟ ଦେଖିପାରିବେ କି?</h6>
+            <!-- faq answer -->
+            <div class="faq-body">
+              <p>
+                ନା, ତଥ୍ୟ କେବଳ ପ୍ରାଧିକୃତ ସରକାରୀ ଏବଂ ବୀମା କମ୍ପାନୀ କର୍ମଚାରୀଙ୍କ ଦ୍ୱାରା
+                ଦେଖାଯାଇପାରିବ |
+              </p>
             </div>
-
-            <hr class="hr-line">
-            <div class="faq-seven">
-                <!-- faq question -->
-                <h6 class="faq-page">Can farmers view the statistical data?</h6>
-                <!-- faq answer -->
-                <div class="faq-body">
-                    <p>No, the data can be viewed only by authorized government and insurance companu personnels only. .
-                    </p>
-                </div>
+          </div>
+          <hr class="hr-line" />
+          <div class="faq-seven">
+            <!-- faq question -->
+            <h6 class="faq-page">ଏହା କେବଳ ଇଂରାଜୀରେ ଉପଲବ୍ଧ କି?</h6>
+            <!-- faq answer -->
+            <div class="faq-body">
+              <p>
+                ନା, ବର୍ତ୍ତମାନ ପୃଷ୍ଠା ଉଭୟ ଓଡିଆ ଏବଂ ଇଂରାଜୀରେ ଉପଲବ୍ଧ | ଏହାକୁ ବିଭିନ୍ନ
+                ଭାଷାରେ ମଧ୍ୟ ପରିବର୍ତ୍ତନ କରାଯାଇପାରେ |
+              </p>
             </div>
-
-            <hr class="hr-line">
-            <div class="faq-eight">
-                <!-- faq question -->
-                <h6 class="faq-page">Is it only available in English?</h6>
-                <!-- faq answer -->
-                <div class="faq-body">
-                    <p>No, currently the page is available in both odia and english. It can be sclaed further to
-                        different languages as well.</p>
-                </div>
+          </div>
+          <hr class="hr-line" />
+          <div class="faq-eight">
+            <!-- faq question -->
+            <h6 class="faq-page">ଅଧିକାରୀଙ୍କ ସହିତ କିପରି ଯୋଗାଯୋଗ କରିବେ?</h6>
+            <!-- faq answer -->
+            <div class="faq-body">
+              <p>
+                ବଣ୍ଟିତ ଅଧିକାରୀଙ୍କ ଯୋଗାଯୋଗ ବିବରଣୀ ପୃଷ୍ଠାର ନିମ୍ନରେ ମିଳିପାରିବ <br />
+                ଟୋଲ୍ ଫ୍ରି କିସାନ୍ କଲ୍ ସେଣ୍ଟର: 1800 180 1551 <br />
+                ଇମେଲ୍: kisan@gmail.com <br />
+                ସ୍ଥାନ: କୃଷି ଏବଂ ସହଯୋଗ ମନ୍ତ୍ରଣାଳୟ କୃଷି ଏବଂ କୃଷକ କଲ୍ୟାଣ ମନ୍ତ୍ରଣାଳୟ |
+                କୃଷ୍ଣ ଭବନ ରାଜେନ୍ଦ୍ର ପ୍ରସାଦ ରାସ୍ତା ନୂଆଦିଲ୍ଲୀ -110001
+              </p>
             </div>
-
-            <hr class="hr-line">
-            <div class="faq-nine">
-                <!-- faq question -->
-                <h6 class="faq-page">How to contact the officials?</h6>
-                <!-- faq answer -->
-                <div class="faq-body">
-                    <p>The contact details of the allotted officials can be found at the bottom of the page. <br> Toll Free
-                        Kisan Call Center: 1800 180 1551  <br> Email: kisan@gmail.com <br> Location:
-                        Dept of Agriculture & Cooperation Ministry of Agriculture and Farmers Welfare
-                        Krishi Bhawan
-                        Rajendra Prasad Road
-                        New Delhi-110001 .</p>
-                </div>
+          </div>
+          <hr class="hr-line" />
+          <div class="faq-nine">
+            <!-- faq question -->
+            <h6 class="faq-page">
+              ଅସନ୍ତୁଷ୍ଟ ହେବାର ଅବୈଧ କାରଣ ବିଷୟରେ ସରକାର କିପରି ଜାଣିବେ?
+            </h6>
+            <!-- faq answer -->
+            <div class="faq-body">
+              <p>
+                ଆବେଦନ ଗ୍ରହଣ କିମ୍ବା ପ୍ରତ୍ୟାଖ୍ୟାନ ହେବା ପରେ ଚାଷୀଙ୍କ ଦ୍ୱାରା ପୂରଣ କରିବାକୁ
+                ଏକ ମତାମତ ଫର୍ମ ଉପଲବ୍ଧ |
+              </p>
             </div>
-
-            <hr class="hr-line">
-            <div class="faq-three">
-                <!-- faq question -->
-                <h6 class="faq-page">How will the government know about the invalid reasons for unsettlement?</h6>
-                <!-- faq answer -->
-                <div class="faq-body">
-                    <p>There is a feedback form avaliable to be filled by the farmer after the application is accepted
-                        or rejected. .</p>
-                </div>
-            </div>
-
+          </div>
+          <hr class="hr-line" />
         </section>
-    </main>
-
-    <br><br>
-    
+      </main>
+      
+      <br><br>
 
 
         <!--=============== FOOTER ===============-->
         <footer class="footer section">
             <div class="footer__container container grid">
                 <div class="footer__content ">
-                    <p class="contact__address">Toll Free Kisan Call Center: <span class="contact__information"> 1800 180 1551</span></p>
+                    <p class="contact__address">ଟୋଲ୍ ଫ୍ରି କିସାନ୍ କଲ୍ ସେଣ୍ଟର: <span class="contact__information"> 1800 180 1551</span></p>
                 </div>
 
                 <div class="footer__content ">
-                    <p class="contact__address">Email:  <span class="contact__information">kisan@gmail.com</span></p>
+                    <p class="contact__address">ଇମେଲ୍:  <span class="contact__information">kisan@gmail.com</span></p>
                 </div>
 
                 <div class="footer__content ">
-                    <p class="contact__address">Location: <span class="contact__information"><br>Dept of Agriculture & Cooperation Ministry of Agriculture and Farmers Welfare<br> 
-                        Krishi Bhawan<br>Rajendra Prasad Road<br>New Delhi-110001</span></p>
+                    <p class="contact__address">ଅବସ୍ଥାନ: <span class="contact__information"><br>କୃଷି ଏବଂ ସହଯୋଗ ମନ୍ତ୍ରଣାଳୟ କୃଷି ଏବଂ କୃଷକ କଲ୍ୟାଣ ମନ୍ତ୍ରଣାଳୟ<br> 
+                        କୃଷି ଭବନ<br>ରାଜେନ୍ଦ୍ର ପ୍ରସାଦ ପଥ<br>ନୂଆଦିଲ୍ଲୀ-110001</span></p>
                 </div>
 
                 <div class="footer__social">
@@ -872,7 +894,7 @@
         <a href="#" class="scrollup" id="scroll-up">
             <i class='bx bx-up-arrow-alt scrollup__icon'></i>
         </a>
- 
+
         <!--=============== MAIN JS ===============-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
@@ -890,23 +912,21 @@
             function myfunc(){
                 prel.style.display= 'none';
             }
-        </script>
 
-        <script>
             function validateid() {
                 var appno = document.getElementById("appnoid").value;
         
                 if (appno == "12345" ) {
-                  window.open("/id0.html");
+                  window.open("/id0odia.html");
                   return false;
                 } else if(appno =="67890")
                 {
-                    window.open("./id1.html");
+                    window.open("./id1odia.html");
                     return false;
                 }
                 else{
-                    alert("Invalid Application Number");
-                    window.open("/index.html");
+                    alert("ଅବୈଧ ଆପ୍ଲିକେସନ୍ ନମ୍ଵର୍");
+                    window.open("/indexodia.html");
                     return true;
                 }
                 
@@ -916,21 +936,20 @@
                 var appno = document.getElementById("appnopreid").value;
         
                 if (appno == "12345" ) {
-                  window.open("/preid0.html");
+                  window.open("/preid0odia.html");
                   return false;
                 } else if(appno =="67890")
                 {
-                    window.open("./preid1.html");
+                    window.open("./preid1odia.html");
                     return false;
                 }
                 else{
-                    //window.open("/index.html");
-                    alert("Invalid Application Number");
-                    window.open("/index.html");
+                    alert("ଅବୈଧ ଆପ୍ଲିକେସନ୍ ନମ୍ଵର୍");
+                    window.open("/indexodia.html");
                     return true;
                 }
               }
-          </script>
+        </script>
         <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
          -->
          

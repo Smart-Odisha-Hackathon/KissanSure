@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/site.webmanifest">
+    <title>ସ୍ବେଚ୍ଛସେବୀ</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</head>
+<body onload="myfunc()">
+    <div id="preloader">
+  
+    </div> 
+    
+    <div class="container-fluid py-2 border-bottom d-none d-lg-block topbar1">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-6 text-center text-lg-start mb-2 mb-lg-0">
+                  <div class="d-inline-flex align-items-center">
+                      <a class="text-decoration-none text-body pe-3" href=""><i class="bi bi-telephone me-2"></i>+012
+                          345 6789</a>
+                          <a style=" border-radius: 10px; padding-right: 1px; padding-left: 1px; background-color: rgb(227, 28, 28)" class="text-decoration-none text-body px-3" href="https://drive.google.com/drive/folders/1YoCcFEAqqnoTIl2jHNRQ39viIugsCKr6?usp=sharing"><i
+                            class="bi bi-envelope me-2"></i>ସାହାଯ୍ୟ </a>
+                      
+  
+                  </div>
+              </div>
+              <div class="col-md-6 text-center text-lg-end">
+                  <div class="d-inline-flex align-items-center">
+                      <div class="toogle">
+                          <button id="b1" type="button" class="engtoggle" onclick="window.location.href='volunteer.html'">Eng</button>
+                          <button id="b2" type="button" class="odiatoggle" onclick="window.location.href='volunteerodia.html'">ଓଡ଼ିଆ</button>
+                      </div>
+                      
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+    
+    <header class="header" id="header">
+      <nav class="nav container">
+          <a href="indexodia.html" class="nav__logo hover-color"><h1>କୃଷକ ନିଶ୍ଚିତ</h1></a>
+  
+          <div class="nav__menu" id="nav-menu">
+              <ul class="nav__list">
+                  
+                  <li class="nav__item">
+                      <a href="indexodia.html" class="nav__link">ଘର</a>
+                  </li>
+                  <li class="nav__item">
+                      <a href="indexodia.html" class="nav__link">ଦାବି ଟ୍ରାକ୍</a>
+                  </li>
+                  <li class="nav__item">
+                      <a href="indexodia.html" class="nav__link">ପ୍ରିମିୟମ୍ ଯାଞ୍ଚ</a>
+                  </li>
+                  <li class="nav__item">
+                      <a href="predictodia.html" class="nav__link">ପୂର୍ବାନୁମାନ ସମାଧାନ</a>
+                  </li>
+                  <i class='bx bx-toggle-left change-theme' id="theme-button"></i>
+              </ul>
+          </div>
+  
+          <div class="nav__toggle" id="nav-toggle">
+              <i class='bx bx-grid-alt'></i>
+          </div>
+         
+      </nav>
+  </header>
+  <br>
+  <br>
+    <div class="container my-5 p-4" style="border: 1px solid black;">
+        <form>
+            <div class="form-group">    
+              <label for="file number">ପ୍ରୟୋଗ / ଫାଇଲ୍ ନମ୍ବର:</label>
+              <input name="total_land" type="text" class="form-control" id="idx">
+            </div>
+            <div class="form-group">
+              <label for="seasonname">ଋତୁ:</label>
+              <div class="form-check ">
+                <input class="form-check-input" type="radio" name="season" id="inlineRadio3" value="0">
+                <label class="form-check-label" for="inlineRadio1">ଖରିଫ</label>
+              </div>
+              <div class="form-check ">
+                <input class="form-check-input" type="radio" name="season" id="inlineRadio3" value="1">
+                <label class="form-check-label" for="inlineRadio2">ରବି</label>
+              </div>
+            </div>
+            <div class="form-group">
+                <label for="District">ପ୍ରଭାବିତ କ୍ଷେତ୍ର</label>
+                </br>
+                <select class="form-select" name="district" aria-label="Default select example">
+                    <option selected>ଗୋଟିଏ ବାଛନ୍ତୁ</option>
+                    <option value="0">ଅନଗୁଲ</option>
+                    <option value="1">ଭଦ୍ରକ</option>
+                    <option value="2">କଟକ</option>
+                    <option value="3">ଖୋର୍ଧା</option>
+                    <option value="4">କେନ୍ଦ୍ରାପଡା</option>
+                    <option value="5">ମୟୂରଭଞ୍ଜ</option>
+                    <option value="6">ସୁନ୍ଦରଗଡ</option>
+                  </select>
+            </div>
+            <div class="form-group">
+              <label for="losstype">କ୍ଷତିର ପ୍ରକାର  </label>
+              </br>
+              <select class="form-select" aria-label="Default select example" name="loss_type" >
+                  <option selected>ଗୋଟିଏ ବାଛନ୍ତୁ</option>
+                  <option value="0">ପ୍ରତିରୋଧ ବୁଣିବା</option>
+                  <option value="1">ଷ୍ଟାଣ୍ଡିଂ ଫସଲ (ଅମଳ ପାଇଁ ବୁଣିବା)</option>
+                  <option value="2">ଅମଳ ପରେ</option>
+                  <option value="3">ସ୍ଥାନୀୟ ବିପର୍ଯ୍ୟୟ</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="myfile">ଏକ ଫାଇଲ୍ ଚୟନ କରନ୍ତୁ:</label>
+                <button type="submit" class="btn btn-secondary btn-sm">କ୍ୟାପଚର୍</button>     
+            </div>
+            
+            <button type="submit" class="btn btn-primary">ଦାଖଲ କରନ୍ତୁ</button>
+          </form>
+          </div>
+          <footer class="footer section">
+            <div class="footer__container container grid">
+                <div class="footer__content ">
+                    <p class="contact_address">ଟୋଲ୍ ଫ୍ରି କିସାନ୍ କଲ୍ ସେଣ୍ଟର: <span class="contact_information"> 1800 180 1551</span></p>
+                </div>
+
+                <div class="footer__content ">
+                    <p class="contact_address">ଇମେଲ୍:  <span class="contact_information">kisan@gmail.com</span></p>
+                </div>
+
+                <div class="footer__content ">
+                    <p class="contact_address">ଅବସ୍ଥାନ: <span class="contact_information"><br>କୃଷି ଏବଂ ସହଯୋଗ ମନ୍ତ୍ରଣାଳୟ କୃଷି ଏବଂ କୃଷକ କଲ୍ୟାଣ ମନ୍ତ୍ରଣାଳୟ<br> 
+                      କୃଷ୍ଣ ଭବନ<br>ରାଜେନ୍ଦ୍ର ପ୍ରସାଦ ରାସ୍ତା<br>ନୂଆଦିଲ୍ଲୀ-110001</span></p>
+                </div>
+
+                <div class="footer__social">
+                    <a href="#" class="footer__social-link"><i class='bx bxl-facebook-circle '></i></a>
+                    <a href="#" class="footer__social-link"><i class='bx bxl-twitter'></i></a>
+                    <a href="#" class="footer__social-link"><i class='bx bxl-instagram-alt'></i></a>
+                </div>
+            </div>
+            
+        </footer>
+<a href="#" class="scrollup" id="scroll-up">
+  <i class='bx bx-up-arrow-alt scrollup__icon'></i>
+</a>
+
+<!--=============== MAIN JS ===============-->
+<script src="assets/js/main.js"></script>
+<script>
+  var prel= document.getElementById('preloader');
+      function myfunc(){
+        prel.style.display= 'none';
+      }
+</script>
+</body>
+</html>
